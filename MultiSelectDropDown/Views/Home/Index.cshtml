@@ -1,0 +1,14 @@
+﻿@model MultiSelectDropDown.Models.StudentViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ListBoxFor(x => x.SelectedStudents, Model.Student);
+    <br />
+    <input type="submit" value="Submit" />
+}
+
+
